@@ -28,10 +28,11 @@ const AboutSection = () => {
             <span className="text-muted-foreground">with passion.</span>
           </h2>
           <p className="text-muted-foreground leading-relaxed text-sm sm:text-base font-body mb-4">
-            I'm a Junior Web Developer and UI/UX Designer with a passion for creating beautiful, user-centric digital experiences. My journey in tech started with curiosity and has grown into a deep commitment to crafting efficient, elegant solutions.
+             I’m a Junior Front-End Developer passionate about building responsive and user-friendly web applications. I specialize in React, JavaScript, Bootstrap, and Material UI, creating clean and efficient interfaces that deliver a smooth user experience. 
+             
           </p>
           <p className="text-muted-foreground leading-relaxed text-sm sm:text-base font-body mb-8 opacity-90">
-            With experience in React, Flutter, and backend technologies like Firebase and MySQL, I bring ideas to life through clean code and thoughtful design. I believe in continuous learning and staying updated with the latest technologies and design trends.
+           I enjoy solving real-world problems through code and continuously improving my skills to stay aligned with modern web development practices. My goal is to grow into a Full-Stack Developer and build scalable, high-quality applications.
           </p>
 
           <div className="flex items-center gap-8 sm:gap-12 mt-8">
