@@ -7,8 +7,8 @@ import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { toast } from "sonner";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
+  { icon: Github, label: "GitHub", href: "https://github.com/kasthooriGithub" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/kasthoori-kaneshalingam-71b195351/" },
   
 ];
 
