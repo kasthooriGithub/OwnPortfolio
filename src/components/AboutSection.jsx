@@ -53,7 +53,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="flex justify-start md:justify-center"
           >
-            <div className="flex items-center gap-8 sm:gap-12 md:gap-8 lg:gap-12 mt-4 md:mt-0">
+            <div className="flex items-center justify-center md:justify-start gap-8 sm:gap-12 md:gap-8 lg:gap-12 text-center md:text-left">
               <div>
                 <h4 className="font-display font-bold text-3xl md:text-4xl text-primary mb-1">
                   3+
