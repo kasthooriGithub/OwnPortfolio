@@ -82,7 +82,7 @@ const EducationSection = () => {
       className="p-4 sm:p-6 rounded-2xl bg-card border border-border card-lift mb-6"
     >
       <div className="flex items-center gap-2 text-primary mb-1">
-        <GraduationCap size={14} />
+        <GraduationCap size={8} />
         <span className="text-xs sm:text-sm font-medium">{edu.period}</span>
       </div>
       <h3 className="font-display font-bold text-base sm:text-lg">{edu.degree}</h3>
