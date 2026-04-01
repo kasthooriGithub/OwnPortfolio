@@ -73,7 +73,7 @@ const ProjectsSection = () => {
                   <div className="project-overlay"></div>
                 </div>
 
-                <div className="project-content p-4">
+                <div className="project-content p-2">
                   <div className="d-flex align-items-start justify-content-between mb-3">
                     <h3 className="h5 fw-bold mb-0">{project.title}</h3>
                     <div className="d-flex gap-2">

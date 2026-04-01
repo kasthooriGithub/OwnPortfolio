@@ -45,7 +45,7 @@ const SkillsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.15 * gi, duration: 0.5 }}
-              className="p-6 rounded-2xl bg-card border border-border card-lift"
+              className="p-3 rounded-2xl bg-card border border-border card-lift"
             >
               <h3 className="font-display font-semibold text-lg mb-5 text-primary">{group.title}</h3>
               <div className="flex flex-wrap gap-2.5">
