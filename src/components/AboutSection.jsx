@@ -34,7 +34,7 @@ const AboutSection = () => {
 
             <p className="text-muted-foreground leading-relaxed text-sm sm:text-base font-body mb-4">
               I’m a Junior Front-End Developer passionate about building responsive and
-              user-friendly web applications. I specialize in React, JavaScript,
+              user-friendly web applications. I have experience in React, JavaScript,
               Bootstrap, and Material UI, creating clean and efficient interfaces
               that deliver a smooth user experience.
             </p>
