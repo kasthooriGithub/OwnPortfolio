@@ -20,10 +20,10 @@ const projects = [
   {
     title: "Fitness Tracker App",
     desc: "A comprehensive web application for managing fitness goals, tracking workouts, and monitoring progress.",
-    tags: ['React', 'Firebase', 'Bootstrap','Custom CSS'],
+    tags: ['React', 'Firebase', 'Bootstrap', 'Custom CSS'],
     image: fitnessTrackerImg,
     github_url: 'https://github.com/kasthooriGithub/FitnessTracker.git',
-    live_url: 'https://fitness-tracker-blond-five.vercel.app/auth',
+    live_url: 'https://fitness-tracker-blond-five.vercel.app/',
   },
   {
     title: "Furniture E-Commerce Website (Elegant Furnish)",
@@ -65,9 +65,9 @@ const ProjectsSection = () => {
                 className="project-card h-100"
               >
                 <div className="project-image-container">
-                  <img 
-                    src={project.image || placeholderImg} 
-                    alt={project.title} 
+                  <img
+                    src={project.image || placeholderImg}
+                    alt={project.title}
                     className="project-img"
                   />
                   <div className="project-overlay"></div>
@@ -78,10 +78,10 @@ const ProjectsSection = () => {
                     <h3 className="h5 fw-bold mb-0">{project.title}</h3>
                     <div className="d-flex gap-2">
                       {project.github_url && (
-                        <a 
-                          href={project.github_url} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={project.github_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="project-icon-link github"
                           title="GitHub Repository"
                         >
@@ -89,10 +89,10 @@ const ProjectsSection = () => {
                         </a>
                       )}
                       {project.live_url && (
-                        <a 
-                          href={project.live_url} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={project.live_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="project-icon-link live"
                           title="Live Demo"
                         >
