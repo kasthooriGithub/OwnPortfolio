@@ -14,7 +14,7 @@ const projects = [
     desc: "A responsive and high-performance portfolio website built with React and Bootstrap.",
     tags: ['React', 'Bootstrap', 'Custom CSS'],
     image: modernPortfolioImg,
-    github_url: 'https://github.com',
+    github_url: 'https://github.com/kasthooriGithub/MyPortfolio.git',
     live_url: 'https://demo.com',
   },
   {
