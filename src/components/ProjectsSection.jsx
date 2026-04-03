@@ -32,6 +32,15 @@ const projects = [
   //   image: furnitureEcommerceImg,
   //   github_url: 'https://github.com/kasthooriGithub/FitnessTracker.git',
   // },
+
+  {
+  title: "ApplyFlow - Job Application Tracker",
+  desc: "A modern web application that helps students and job seekers track job applications, manage interview schedules, and stay organized with follow-ups in one place.",
+  tags: ['React', 'Firebase', 'Material UI', 'Bootstrap', 'Responsive Design'],
+  image: applyFlowImg,
+  github_url: 'https://github.com/kasthooriGithub/ApplyFlow.git',
+  live_url: '', // add after deployment (Vercel / Netlify)
+}
 ];
 
 const ProjectsSection = () => {
