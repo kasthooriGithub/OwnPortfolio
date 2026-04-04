@@ -7,6 +7,7 @@ import { Github } from "./ui/BrandIcons";
 import modernPortfolioImg from "../assets/projects/modern_portfolio.png";
 import fitnessTrackerImg from "../assets/projects/fitness_tracker.png";
 import furnitureEcommerceImg from "../assets/projects/furniture_ecommerce.png";
+import applyFlowImg from "../assets/projects/applyFlowImg.png";
 
 const projects = [
   {
@@ -34,13 +35,13 @@ const projects = [
   // },
 
   {
-  title: "ApplyFlow - Job Application Tracker",
-  desc: "A modern web application that helps students and job seekers track job applications, manage interview schedules, and stay organized with follow-ups in one place.",
-  tags: ['React', 'Firebase', 'Material UI', 'Bootstrap', 'Responsive Design'],
-  image: applyFlowImg,
-  github_url: 'https://github.com/kasthooriGithub/ApplyFlow.git',
-  live_url: '', // add after deployment (Vercel / Netlify)
-}
+    title: "ApplyFlow - Job Application Tracker",
+    desc: "A modern web application that helps students and job seekers track job applications, manage interview schedules, and stay organized with follow-ups in one place.",
+    tags: ['React', 'Firebase', 'Material UI', 'Bootstrap', 'Responsive Design'],
+    image: applyFlowImg,
+    github_url: 'https://github.com/kasthooriGithub/ApplyFlow.git',
+    live_url: '', // add after deployment (Vercel / Netlify)
+  }
 ];
 
 const ProjectsSection = () => {
