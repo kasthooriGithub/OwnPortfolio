@@ -26,14 +26,6 @@ const projects = [
     github_url: 'https://github.com/kasthooriGithub/FitnessTracker.git',
     live_url: 'https://fitness-tracker-blond-five.vercel.app/',
   },
-  // {
-  //   title: "Furniture E-Commerce Website (Elegant Furnish)",
-  //   desc: "A modern e-commerce platform for selling furniture online with a focus on design and user experience.",
-  //   tags: ["PHP ", "MySQL", "Html", "CSS", "JavaScript", "Bootstrap"],
-  //   image: furnitureEcommerceImg,
-  //   github_url: 'https://github.com/kasthooriGithub/FitnessTracker.git',
-  // },
-
   {
     title: "ApplyFlow - Job Application Tracker",
     desc: "A modern web application that helps students and job seekers track job applications, manage interview schedules, and stay organized with follow-ups in one place.",
