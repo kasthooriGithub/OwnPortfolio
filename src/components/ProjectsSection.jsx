@@ -103,7 +103,7 @@ const ProjectsSection = () => {
                       )}
                     </div>
                   </div>
-                  <p className="project-desc text-muted small mb-4">{project.desc}</p>
+                  <p className="project-desc small mb-4">{project.desc}</p>
                   <div className="project-tags d-flex flex-wrap gap-2 mt-auto">
                     {project.tags.map((tag) => (
                       <span key={tag} className="badge project-tag">

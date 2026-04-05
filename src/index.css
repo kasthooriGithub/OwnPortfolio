@@ -260,4 +260,8 @@ body {
   line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  color: #6c757d; /* normal muted (light mode) */
+}
+.dark .project-desc {
+  color: #cccccc; /* brighter for dark mode */
 }
