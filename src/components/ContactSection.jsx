@@ -5,6 +5,7 @@ import { Github, Linkedin } from "./ui/BrandIcons";
 import { db } from "../lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/kasthooriGithub" },
@@ -23,25 +24,43 @@ const ContactSection = () => {
     message: ""
   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
 
-    try {
-      await addDoc(collection(db, "messages"), {
-        ...formData,
-        createdAt: serverTimestamp(),
-      });
-      
-      setSent(true);
-      toast.success("Message sent successfully!");
-    } catch (error) {
-      console.error("Error sending message:", error);
-      toast.error("Failed to send message. Please check your Firebase rules.");
-    } finally {
-      setLoading(false);
-    }
-  };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+
+  try {
+    // ✅ 1. Store in Firebase
+    await addDoc(collection(db, "messages"), {
+      ...formData,
+      createdAt: serverTimestamp(),
+    });
+
+    // ✅ 2. Send Email using EmailJS
+    await emailjs.send(
+      "service_htfkcid",
+      "template_a4e05x5",
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      "p1ID8b1mkgHcRKJSr"
+    );
+
+    setSent(true);
+    toast.success("Message sent successfully!");
+
+    // ✅ Clear form
+    setFormData({ name: "", email: "", message: "" });
+
+  } catch (error) {
+    console.error("Error:", error);
+    toast.error("Failed to send message ❌");
+  } finally {
+    setLoading(false);
+  }
+};
 
   const handleChange = (e) => {
     const { name, value } = e.target;
