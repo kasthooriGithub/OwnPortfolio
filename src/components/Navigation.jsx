@@ -8,6 +8,7 @@ const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dark, setDark] = useState(() => document.documentElement.classList.contains("dark"));
+  const [activeSection, setActiveSection] = useState("Home");
 
   const toggleDark = () => {
     const next = !dark;
@@ -17,8 +18,30 @@ const Navigation = () => {
   };
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20);
+
+      let current = "Home";
+      for (const link of links) {
+        if (link === "Home") continue;
+        const el = document.getElementById(link.toLowerCase());
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 120) {
+            current = link;
+          }
+        }
+      }
+      
+      if (window.scrollY < 100) {
+        current = "Home";
+      }
+      
+      setActiveSection(current);
+    };
+
     window.addEventListener("scroll", onScroll);
+    onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -57,9 +80,18 @@ const Navigation = () => {
             <button
               key={link}
               onClick={() => scrollTo(link)}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors story-link"
+              className={`relative text-sm font-medium transition-colors story-link py-1 ${
+                activeSection === link ? "text-primary" : "text-muted-foreground hover:text-foreground"
+              }`}
             >
               <span>{link}</span>
+              {activeSection === link && (
+                <motion.div
+                  layoutId="activeNavIndicator"
+                  className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary rounded-full"
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                />
+              )}
             </button>
           ))}
           <button
@@ -116,7 +148,11 @@ const Navigation = () => {
                 <button
                   key={link}
                   onClick={() => scrollTo(link)}
-                  className="text-left text-sm font-medium text-muted-foreground hover:text-foreground py-3 px-3 rounded-lg hover:bg-accent/50 transition-colors active:bg-accent"
+                  className={`text-left text-sm font-medium py-3 px-3 rounded-lg transition-colors ${
+                    activeSection === link
+                      ? "bg-primary/10 text-primary"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50 active:bg-accent"
+                  }`}
                 >
                   {link}
                 </button>
