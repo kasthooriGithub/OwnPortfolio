@@ -6,12 +6,28 @@ const Footer = () => (
       <span className="text-xs sm:text-sm text-muted-foreground text-center">
         © 2025 Kasth<span className="text-primary">oori</span> —All rights reserved — <span className="text-primary">Kasthoori</span>
       </span>
+
       <div className="flex gap-4">
         {[
-          { icon: Github, label: "GitHub" },
-          { icon: Linkedin, label: "LinkedIn" },
-        ].map(({ icon: Icon, label }) => (
-          <a key={label} href="#" className="btn-press text-muted-foreground hover:text-primary transition-colors" aria-label={label}>
+          { 
+            icon: Github, 
+            label: "GitHub", 
+            href: "https://github.com/kasthooriGithub" 
+          },
+          { 
+            icon: Linkedin, 
+            label: "LinkedIn", 
+            href: "https://www.linkedin.com/in/kasthoori-kaneshalingam-71b195351/" 
+          },
+        ].map(({ icon: Icon, label, href }) => (
+          <a 
+            key={label} 
+            href={href} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-press text-muted-foreground hover:text-primary transition-colors" 
+            aria-label={label}
+          >
             <Icon size={18} />
           </a>
         ))}

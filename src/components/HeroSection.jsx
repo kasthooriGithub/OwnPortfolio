@@ -42,7 +42,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.65, duration: 0.5 }}
-              className="flex flex-wrap gap-3 pt-2 justify-center md:justify-start"
+              className="flex flex-wrap gap-3 pt-2 justify-center md:justify-center"
             >
               <button
                 onClick={() =>
@@ -62,14 +62,14 @@ const HeroSection = () => {
                 Contact Me
               </button>
 
-              <a
+              {/* <a
                 href="/resume-kasthoori.pdf"
                 download
                 className="btn-press px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl border border-primary/30 bg-primary/5 text-primary font-semibold text-sm hover:bg-primary/10 transition-colors inline-flex items-center gap-2"
               >
                 <Download size={16} />
                 Resume
-              </a>
+              </a> */}
             </motion.div>
           </div>
 

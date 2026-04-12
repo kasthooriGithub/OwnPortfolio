@@ -42,12 +42,12 @@ const experience = [
     period: 'Feb 2023 - Aug 2023',
     description: 'Developed communication, teamwork, and professional workplace behavior.',
   },
-  {
-    company: 'Academic Project - Online Furniture Platform',
-    role: 'Final Year Project',
-    period: '2021 - Present',
-    description: 'Developed an online furniture platform using HTML, CSS, JavaScript, and PHP. Designed responsive user interfaces for product browsing and shopping experience.',
-  }
+  // {
+  //   company: 'Academic Project - Online Furniture Platform',
+  //   role: 'Final Year Project',
+  //   period: '2021 - Present',
+  //   description: 'Developed an online furniture platform using HTML, CSS, JavaScript, and PHP. Designed responsive user interfaces for product browsing and shopping experience.',
+  // }
 ];
 
 const EducationSection = () => {

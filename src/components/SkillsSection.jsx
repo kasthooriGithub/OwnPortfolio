@@ -12,11 +12,11 @@ const skillGroups = [
   },
   {
     title: "Design & Tools",
-    skills: ["Git & GitHub", "Figma", "VS Code", "Canva", "Postman"],
+    skills: ["Git & GitHub", "Figma", "VS Code", "Canva"],
   },
   {
     title: "Other",
-    skills: ["UI/UX Design", "Responsive Design", "REST APIs", "Agile", "Problem Solving"],
+    skills: ["UI/UX Design", "Responsive Design", "REST APIs", "Problem Solving"],
   },
 ];
 
