@@ -8,6 +8,7 @@ import modernPortfolioImg from "../assets/projects/modern_portfolio.png";
 import fitnessTrackerImg from "../assets/projects/fitness_tracker.png";
 import furnitureEcommerceImg from "../assets/projects/furniture_ecommerce.png";
 import applyFlowImg from "../assets/projects/applyFlowImg.png";
+import safeLinkImg from "../assets/projects/safeLinkImg.png";
 
 const projects = [
   {
@@ -16,7 +17,7 @@ const projects = [
     tags: ['React', 'Bootstrap', 'Custom CSS'],
     image: modernPortfolioImg,
     github_url: 'https://github.com/kasthooriGithub/MyPortfolio.git',
-    live_url: 'https://demo.com',
+    live_url: 'https://dummy-portfolio-beige.vercel.app/',
   },
   {
     title: "Fitness Tracker App",
@@ -33,7 +34,17 @@ const projects = [
     image: applyFlowImg,
     github_url: 'https://github.com/kasthooriGithub/ApplyFlow.git',
     live_url: '', // add after deployment (Vercel / Netlify)
+  },
+  {
+    title: "Offline Emergency Help App (SafeLink)",
+    desc: "A modern web application that helps students and job seekers track job applications, manage interview schedules, and stay organized with follow-ups in one place.",
+    tags: ['React Native', 'Firebase', 'MySQL', 'Node.js', 'Responsive Design'],
+    image: safeLinkImg,
+    github_url: 'https://github.com/kasthooriGithub/SafeLink.git',
+    live_url: '', // add after deployment (Vercel / Netlify)
   }
+
+
 ];
 
 const ProjectsSection = () => {
@@ -59,7 +70,7 @@ const ProjectsSection = () => {
 
         <div className="row g-4 g-lg-5">
           {projects.map((project, i) => (
-            <div key={project.title} className="col-12 col-md-4">
+            <div key={project.title} className="col-12 col-md-3">
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
